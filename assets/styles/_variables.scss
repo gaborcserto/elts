@@ -1,0 +1,75 @@
+//variables
+
+//fonts
+@font-face {
+	font-family: 'Ubuntu-Light';
+	src: url('../fonts/Ubuntu-Light.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-LightItalic';
+	src: url('../fonts/Ubuntu-LightItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-Medium';
+	src: url('../fonts/Ubuntu-Medium.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-MediumItalic';
+	src: url('../fonts/Ubuntu-MediumItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'UbuntuCondensed-Regular';
+	src: url('../fonts/UbuntuCondensed-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-Regular';
+	src: url('../fonts/Ubuntu-Regular.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-Italic';
+	src: url('../fonts/Ubuntu-Italic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-Bold';
+	src: url('../fonts/Ubuntu-Bold.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-BoldItalic';
+	src: url('../fonts/Ubuntu-BoldItalic.ttf') format('truetype');
+}
+@font-face {
+	font-family: 'Ubuntu-Title';
+	src: url('../fonts/Ubuntu-Title.ttf') format('truetype');
+}
+
+//colors
+$color_1: #45a5e2;
+$color_2: #fff;
+$color_3: #000;
+$color_4: #f8f8f8;
+$color_5: #2bb089;
+$color_6: #ff9696;
+$color_7: #cecece;
+$color_8: #98cdff;
+$color_9: #275594;
+$color_10: #ffcb05;
+$color_11: #ac62d7;
+$color_12: #897e64;
+$color_13: #e4e4e4;
+$color_15: #eee;
+
+$bubble_1: #ff9dc7;
+$bubble_2: #8ac2a7;
+$bubble_3: $color_1;
+$bubble_4: #8445e2;
+$bubble_5: #45e2dc;
+$bubble_6: #93e245;
+$bubble_7: #8b9de0;
+$bubble_8: #efdb7d;
+
+//breakpoints
+$breakpoint-1200: 1200px;
+$breakpoint-992: 992px;
+$breakpoint-768: 768px;
+$breakpoint-480: 480px;
+

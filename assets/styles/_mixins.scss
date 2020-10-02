@@ -1,0 +1,128 @@
+@mixin transition($transition-property...) {
+	-webkit-transition: $transition-property;
+	-moz-transition: $transition-property;
+	-ms-transition: $transition-property;
+	-o-transition: $transition-property;
+	transition: $transition-property;
+}
+
+@mixin transform($transform-property...) {
+	-moz-transform: $transform-property;
+	-webkit-transform: $transform-property;
+	-ms--transform: $transform-property;
+	transform: $transform-property;
+}
+
+@mixin background-clip() {
+	-webkit-background-clip: padding;
+	-moz-background-clip: padding;
+	background-clip: padding-box;
+}
+
+@mixin border-top-left-radius($radius) {
+	-webkit-border-top-left-radius: $radius;
+	-moz-border-radius-topleft: $radius;
+	border-top-left-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin border-top-right-radius($radius) {
+	-webkit-border-top-right-radius: $radius;
+	-moz-border-radius-topright: $radius;
+	border-top-right-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin border-bottom-left-radius($radius) {
+	-webkit-border-bottom-left-radius: $radius;
+	-moz-border-radius-bottomleft: $radius;
+	border-bottom-left-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin border-bottom-right-radius($radius) {
+	-webkit-border-bottom-right-radius: $radius;
+	-moz-border-radius-bottomright: $radius;
+	border-bottom-right-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	border-radius: $radius;
+	background-clip: padding-box;
+}
+
+@mixin background-size($type) {
+	-webkit-background-size: $type;
+	-moz-background-size: $type;
+	-o-background-size: $type;
+	background-size: $type;
+}
+
+@mixin box-sizing($type) {
+	-webkit-box-sizing: $type;
+	-moz-box-sizing: $type;
+	box-sizing: $type;
+}
+
+@mixin fade-in() {
+	opacity: 0;  /* make things invisible upon start */
+	-webkit-animation: fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+	-moz-animation: fadeIn ease-in 1;
+	animation: fadeIn ease-in 1;
+
+	-webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+	-moz-animation-fill-mode:forwards;
+	animation-fill-mode:forwards;
+
+	-webkit-animation-duration: 1s;
+	-moz-animation-duration: 1s;
+	animation-duration: 1s;
+}
+
+@mixin animation-delay($delay) {
+	-webkit-animation-delay: $delay;
+	-moz-animation-delay: $delay;
+	animation-delay: $delay;
+}
+
+@mixin box-shadow($propertys){
+	-webkit-box-shadow: $propertys;
+	-moz-box-shadow: $propertys;
+	box-shadow: $propertys;
+}
+
+@mixin vertical-align() {
+	@include transform(translateY(-50%));
+	position: relative;
+	top: 50%;
+}
+
+@mixin horizontal-align() {
+	@include transform(translateX(-50%));
+	position: relative;
+	left: 50%;
+}
+
+@mixin vertical-align-absolute() {
+	@include vertical-align();
+	position: absolute;
+}
+
+@mixin horizontal-align-absolute() {
+	@include horizontal-align();
+	position: absolute;
+}
+
+@mixin center-align() {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+@mixin center-align-absolute() {
+	@include center-align();
+	position: absolute;
+}
